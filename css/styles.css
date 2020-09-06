@@ -192,8 +192,9 @@ p {
     flex-wrap: wrap;
     
 }
-video {
+.video > figure > iframe {
     width: 90%;
+    height: 90%;
     margin: 3em auto;
     display: flex;
     flex-wrap: wrap;
@@ -205,6 +206,8 @@ video {
     cursor: pointer;
     
 }
+
+
 
 .galeria1 {
     width: 90%;
