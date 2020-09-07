@@ -450,6 +450,7 @@ footer > div {
     justify-content: space-around;
     align-items: center;
     margin: auto;
+    width: 100%;
     
    
 }
@@ -457,7 +458,7 @@ footer > div {
     #menu > ul > li {
     color: white;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 60%;
 }
     
 
