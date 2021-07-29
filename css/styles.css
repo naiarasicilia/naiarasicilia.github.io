@@ -8,6 +8,9 @@
     
 }
 
+
+
+
 header {
     display: flex;
     background-image: url(../img/fondo.png);
@@ -25,10 +28,9 @@ header > div {
     border: #E8E8E8 8px outset;
 }
 
-
 section {
     width: 90%;
-    max-width: 1325px;
+    
     margin: auto;
     padding: 2em;
     padding-top: 3.2em;
@@ -86,7 +88,6 @@ p {
 #menu > ul > li {
     list-style: none;
     padding: 1em;
-    font-size: 15px;
     
 }
 
@@ -127,14 +128,14 @@ p {
     margin-left: 3em;
 }
 
-#inicio > div > div.galeria2 {
+#inicio > div > div.galeria20 {
     width: 50%;
     overflow: hidden;
     flex-wrap: wrap;
     
 }
 
-#inicio > div > div.galeria2 > div {
+#inicio > div > div.galeria20 > div {
     width: 300%;
     position: relative;
     display: flex;
@@ -142,16 +143,13 @@ p {
     
 }
 
-#inicio > div > div.galeria2 > div > figure {
+#inicio > div > div.galeria20 > div > figure {
     flex: 33%;
     
 }
-#inicio > div > div.galeria2 > div > figure > img {
+#inicio > div > div.galeria20 > div > figure > img {
     width: 100%;
     vertical-align: middle;
-    
-
-    
 }
 
 @keyframes slider3 {
@@ -185,17 +183,10 @@ p {
 }
 
     
-.galeria {
+
+video {
     width: 90%;
-    margin: 5em auto;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-.video > figure > iframe {
-    width: 90%;
-    height: 90%;
-    margin: 3em auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -207,154 +198,150 @@ p {
     
 }
 
+footer {
+    background-color: #A9D7C6;
+    padding: 6%;
+    text-align: center
+}
+.info i {
+    color: white;
+    font-size:600%;
+    padding: 0 4%;
+    cursor: pointer;
+}
 
+.info i:hover {
+    color: #BA6F5F;
+    
+}
+.copy {
+    margin-top: 4%;
+    font-size: 70%;
+    color: #BA6F5F;
+    text-align: center;
+}
+
+#galeria {
+     margin:0 8%; 
+}
+
+.galeria2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8%;
+    
+}
+.galeria2 img {
+    width: 100%;
+     
+    
+}
 
 .galeria1 {
-    width: 90%;
-    margin: 5em auto;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8%;
+}
+
+
+.galeria1 img {
+    width: 97%;
+    
+}
+.galeria3 {
+    margin: 8%;
+    margin-top: 0;
+    padding-top: 4%;
+   
+    text-align: left; 
+    
+}
+.galeria3 img {
+    width: 50%;
+    padding-bottom: 4%;
+   
+    }
+
+.item {
+    display: block;
+   
+    
+    
+   position: relative; 
+    overflow: hidden;
+}
+.item-info2 {
+    background-color: #A9D7C6;
+    text-align: center;
+    justify-content: center;
+     display: flex;
+    align-items: center;
+    color:  white;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+    right: -100%;
+    opacity: 0;
+    transition: right 0.5s, opacity 1s;
+    
+    
+}
+.item:hover .item-info2 {
+    right: 0;
+    opacity: 1;
+}
+.item-info1 {
+    background-color: #A9D7C6;
+    text-align: center;
+    justify-content: center;
+     display: flex;
+    align-items: center;
+    color:  white;
+    
+    position: absolute;
+    width: 97%;
+    height: 50%;
+    bottom: -100%;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 1s;
+    
     
 }
 
 
-
-
-.galeria > figure {
-    position: relative;
-    padding: 3px;
-    flex: 40%;
-    padding-top: 3px;
-    cursor: pointer;
-}
-.galeria1 > figure {
-    position: relative;
-    padding: 3px;
-    flex: 30%;
-    padding-top: 3px;
-    cursor: pointer;
-}
-
-
-.galeria > figure > img {
-    width: 100%;
-    vertical-align: middle;
-    border-radius: 10px;
-} 
-.galeria1 > figure > img {
-    width: 100%;
-    vertical-align: middle;
-    border-radius: 10px;
-}
-
-
-.galeria > figure > figcaption {
-    width: 100%;
-    background-color: rgba(169, 215, 198, 0.9);
-    border-radius: 10px;
-    padding: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    opacity: 0;
-    transition-duration: 0.5;
-
-}
-.galeria1 > figure > figcaption {
-    width: 100%;
-    background-color: rgba(169, 215, 198, 0.9);
-    border-radius: 10px;
-    padding: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    opacity: 0;
-    transition-duration: 0.5s;
-}
-
-        
-.galeria > figure:hover > figcaption {
-    opacity: 1;
-}
-.galeria1 > figure:hover > figcaption {
+.item:hover .item-info1 {
+    bottom: 0;
     opacity: 1;
 }
 
-
-section > p > a {
-    color: black;
-}
-footer {
-   width: 100%;
-   padding: 3em;
-   background-color: #A9D7C6;
-   text-align: center;
-   position: sticky;
-   top: 0;
-   color: white;
-   margin: 0;
-    text-decoration: none;
+.texto {
+    width: 34%;
+    background-color: #A9D7C6;
+    height: 100%;
+    padding: 2%;
+    right: 0; 
+    top:8%;
+    position: fixed;
+    
    
+    
 }
-footer > a {
-    color:#BA6F5F ;
-    text-decoration-line: none;
-    cursor: pointer;
-}
-footer > p {
-  color: white;
-  
-}
-footer > p > a {
-  color:#BA6F5F ; 
-  text-decoration-line: none;
-  cursor: pointer;
-}
-footer > p > a > strong {
-  color:#BA6F5F ; 
-  text-decoration-line: none;
-  cursor: pointer;
-}
-footer > a > strong {
-    color:#BA6F5F ;
-    text-decoration-line: none;
-    cursor: pointer;
-}
-footer > div {
-    font-size: 12px;
+.texto h1 {
+    text-align: right;
+    align-items: flex-end;
     color: white;
-    margin-top: 5em;
-        
-    }
-
-
+    font-size: 30px;
+}
 @media screen and (max-width: 900px) {
     
     
 
-    .galeria > figure {
-        flex: 50%;
-    }
-    .galeria1 > figure {
-        flex: 30%;
-    }
+  
    
      
-    #menu > ul {
+     #menu > ul {
         max-width: 600px;
          margin: auto;
     }
@@ -367,7 +354,24 @@ footer > div {
         padding-top: 3em;
         
     }
-
+.galeria1 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        margin-top: 0;
+        
+    }
+    .galeria1 img {
+        margin-top: 8%;
+        width: 100%;
+        
+    }
+    
+    .galeria2 img {
+        margin-top: 8%;
+        margin-bottom: 0;
+        
+    }
     #inicio > div {
         flex-direction: column;
         align-items: center;
@@ -377,60 +381,93 @@ footer > div {
         width: 70vh;
          padding-bottom: 3em;
     }
-
-    .galeria > figure > figcaption {
-         display: none;
-    }
-    .galeria1 > figure > figcaption {
-        display: none;
-    } 
-     }
+     .item-info1 {
+    width: 100%;
+    background-color: #A9D7C6;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:  white;
+    bottom: 0;
+    right: 0;
+    position: inherit;
+    display: block;
+    opacity: inherit;
+        margin-top: 0;
+        padding: 4%;
+        margin-bottom: 20px;
+       
     
+    
+    }
+    
+    .item-info2 {
+    background-color: #A9D7C6;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    right: 0;
+    bottom: 0;
+    position: inherit;
+    display: block;
+    opacity: inherit;
+        width: 100%;
+        margin-top: 0;
+        
+        padding: 4%;
+    
+    }
+    a {
+        text-decoration: none;
+    }
+    
+    .texto {
+        width: 100%;
+    background-color: #A9D7C6;
+    height: 100vh;
+    padding: 8%; 
+    position: relative;
+        margin-bottom: 4%;
+    
+    }
+    .texto h1 {
+    text-align: right;
+    align-items: flex-end;
+    margin-top: 15%;
+    color: white;
+    font-size: 150%;
+}
+.galeria3 {
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    
+    align-items: center;
+    margin-bottom: 8%;
+    
+}
+.galeria3  img {
+    width: 100%;
+     
+    
+}
 
+     
+}
 
 
 @media screen and (max-width: 600px) {
-    p {
-       font-size: 12px; 
-    }
-    
-    footer {
-        font-size: 12px;
-        
-    }
-     footer > div {
-        font-size: 9px;
-        
-    }
     section {
         height: auto;
         padding: 1.5em;
         padding-top: 4em;
     }
-   
      #inicio > div > div.galeria2 {
        width: 50vh;
          padding-bottom: 2em;
     }
    
-   
-    .galeria {
-        max-width: 600px;
-        justify-content: center;
-
-     }
-    .galeria > figure {
-        flex: 100%;
-        
-    }
-    .galeria1 {
-        max-width: 600px;
-        justify-content: center;
-
-     }
-    .galeria1 > figure {
-        flex: 100%;
-    }
 
     
     #menu {
@@ -443,25 +480,22 @@ footer > div {
    
 }
 
-    #menu > ul {
+#menu > ul {
     padding: 0;
     height: 3em;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: auto;
-    width: 100%;
     
    
 }
     
-    #menu > ul > li {
+     #menu > ul > li {
     color: white;
     text-decoration: none;
-    font-size: 60%;
+        font-size: 12px;
 }
-    
-
     header {
     display: flex;
     background-image: url(../img/fondo.png);
@@ -474,18 +508,115 @@ footer > div {
     h1 {
         font-size: 40px;
     }
-   
-    .galeria > figure > figcaption {
-         display: none;
-}
-    .galeria1 > figure > figcaption {
-        display: none;
-} 
+    h3 {
+    font-size: 90%;
+        text-decoration: none;
     
- 
+   
+}
+    #inicio > div > div.galeria20 {
+       width: 50vh;
+         padding-bottom: 2em;
+    }
+    .galeria1 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        margin-top: 0;
+        
+    }
+    .galeria1 img {
+        margin-top: 8%;
+        width: 100%;
+        
+    }
+    
+    .galeria2 img {
+        margin-top: 8%;
+        margin-bottom: 0;
+        
+    }
+    .item-info1 {
+    width: 100%;
+    background-color: #A9D7C6;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:  white;
+    bottom: 0;
+    right: 0;
+    position: inherit;
+    display: block;
+    opacity: inherit;
+        margin-top: 0;
+        padding: 4%;
+        margin-bottom: 20px;
+       
+    
+    
+    }
+    
+    .item-info2 {
+    background-color: #A9D7C6;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    right: 0;
+    bottom: 0;
+    position: inherit;
+    display: block;
+    opacity: inherit;
+        width: 100%;
+        margin-top: 0;
+        
+        padding: 4%;
+    
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .texto {
+        width: 100%;
+    background-color: #A9D7C6;
+    height: 110vh;
+    padding: 8%; 
+    position: relative;
+        margin-bottom: 4%;
+    
+    }
+    .texto h1 {
+    text-align: right;
+    align-items: flex-end;
+    margin-top: 15%;
+    color: white;
+    font-size: 150%;
+}
+.galeria3 {
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    
+    align-items: center;
+    margin-bottom: 8%;
+    
+}
+.galeria3  img {
+    width: 100%;
+     
+    
+}
+    .info a i {
+    color: white;
+    font-size:300%;
+    padding: 0 4%;
+    cursor: pointer;
+}
+   
+   
 } 
-
-/*Maquetación de la ventana Modal*/
 
 #modal {
     z-index: 1;
@@ -498,16 +629,18 @@ footer > div {
     display: none;
     justify-content: center;
     align-items: center;
+     
 }
 
 #modal > figure {
-    max-width: 80%;
+    max-width: 60%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
     border-radius: 4px;
     overflow: hidden;
     align-items: center;
     justify-content: center;
     max-height: 90%;
+    
 }
 
 #modal > figure > img {
@@ -516,15 +649,6 @@ footer > div {
     height: 100%;
 }
 
-#modal > figure > figcaption {
-    background-color: #A9D7C6;
-    width: 100%;
-    height: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 
 #cerrar {
     position: absolute;
