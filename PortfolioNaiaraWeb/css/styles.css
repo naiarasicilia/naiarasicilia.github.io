@@ -581,7 +581,7 @@ footer {
     .texto {
         width: 100%;
     background-color: #A9D7C6;
-    height: 110vh;
+    height: 105vh;
     padding: 8%; 
     position: relative;
         margin-bottom: 4%;
@@ -594,6 +594,11 @@ footer {
     color: white;
     font-size: 150%;
 }
+    .texto p {
+        font-size: 65%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 .galeria3 {
      display: flex;
     flex-wrap: wrap;
